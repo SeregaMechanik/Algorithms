@@ -1,10 +1,11 @@
 import java.util.LinkedList;
 
 public class Task2_RequestLogger {
-    LinkedList<Request> requests = new LinkedList<>();
+    LinkedList<Request> requests;
     int timeLimit;
     public Task2_RequestLogger(int timeLimit) {
         this.timeLimit = timeLimit;
+        requests = new LinkedList<>();
     }
 
     public boolean messageRequestDecision(int timestamp, String request)
